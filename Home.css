@@ -3,5 +3,11 @@
 }
 
 .u-section-1 .u-text-1 {
-  margin: 60px auto;
+  margin: 129px auto 0;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 60px;
 }
