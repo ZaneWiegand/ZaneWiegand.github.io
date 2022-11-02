@@ -38226,7 +38226,12 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 65px;
+  min-height: 96px;
+}
+
+.u-header .u-text-1 {
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 
