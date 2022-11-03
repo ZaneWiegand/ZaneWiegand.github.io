@@ -1,17 +1,12 @@
 ---
 layout: sidebar
-title: Tabokie's Page
+title: ZaneWiegand's Page
 avatar: /assets/favicon/android-chrome-512x512.png
-avatar_old: /assets/img/vampire.png
 ---
 
-I'm Xinye Tao, aka Tabokie\*.
-
-I code for a living, specialized in System and Graphics, currently employed at [PingCAP](https://en.pingcap.com).
+I'm Wenguan Zhang, Zane Wiegand\*.
 
 I'm a lifelong learner. This site exists to accompany me through the journey ahead.
-
-I use different languages for writing, please feel free to contact me for possible translation.
 
 
 <br />
@@ -27,6 +22,5 @@ I use different languages for writing, please feel free to contact me for possib
 
 -------
 
-\* Pronounced as /təˈbōkē/.
 
-Thanks Christine Dodrill for your inspiring [site](https://christine.website/), and Martin Tournoij for the great [tool](https://www.goatcounter.com/).
+Thanks Tabokie for your inspiring [site](https://tabokie.github.io/).

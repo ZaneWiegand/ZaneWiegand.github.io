@@ -1,0 +1,12 @@
+{% if page.layout == 'amp' %}
+{% else %}
+<script type='text/javascript'>
+	fortune = new Array(3);
+	fortune[0] = 'Really, do not look back.';
+	fortune[1] = 'Long may the sunshine.';
+	fortune[2] = 'Days gone.';
+
+	index = Math.floor(Math.random() * fortune.length);
+	document.write(fortune[index]);
+</script>
+{% endif %}
