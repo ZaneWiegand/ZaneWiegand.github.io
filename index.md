@@ -6,7 +6,9 @@ avatar: /assets/favicon/android-chrome-512x512.png
 
 I'm Wenguan Zhang, Zane Wiegand\*.
 
-I'm a lifelong learner. This site exists to accompany me through the journey ahead.
+I'm a photography enthusiasts.
+
+Always hungry for food, and knowledge.
 
 
 <br />
@@ -19,7 +21,13 @@ I'm a lifelong learner. This site exists to accompany me through the journey ahe
 <br />
 <br />
 <br />
-
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 -------
 Thanks Tabokie for your inspiring [site](https://tabokie.github.io/).
 

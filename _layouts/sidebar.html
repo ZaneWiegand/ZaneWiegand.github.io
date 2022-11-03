@@ -1,74 +1,75 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <link rel="stylesheet" href="/assets/css/hack.css">
-    <link rel="stylesheet" href="/assets/css/checkbox-container.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
+<html lang="{{ site.lang | default: " en-US" }}">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+<head>
+  <link rel="stylesheet" href="/assets/css/hack.css">
+  <link rel="stylesheet" href="/assets/css/checkbox-container.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-    <title>{{page.title}}</title>
-    <style>
-     .main {
-         padding: 20px 10px;
-     }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
 
-     .hack h1 {
-         padding-top: 0;
-     }
+  <title>{{page.title}}</title>
+  <style>
+    .main {
+      padding: 20px 10px;
+    }
 
-     footer.footer {
-         border-top: 1px solid #ccc;
-         margin-top: 80px;
-         margin-top: 5rem;
-         padding: 48px 0;
-         padding: 3rem 0;
-     }
+    .hack h1 {
+      padding-top: 0;
+    }
 
-     img {
-         max-width: 100%;
-         padding: 1em;
-     }
-    </style>
-    {% seo %}
-    <meta name="google-site-verification" content="LwllE8LNzqSKfduvBO0DPUFHyeOhhYuk7QeKjmQHwKE" />
-  </head>
-  <body class="snow hack">
-    <script data-goatcounter="https://tabokie.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-    <div class="container">
-      {% include navbar.html %}
+    footer.footer {
+      border-top: 1px solid #ccc;
+      margin-top: 80px;
+      margin-top: 5rem;
+      padding: 48px 0;
+      padding: 3rem 0;
+    }
 
-      <div class="snowframe">
-        <div class="grid">
-          <div class="cell -3of12 content">
-            <center>
+    img {
+      max-width: 100%;
+      padding: 1em;
+    }
+  </style>
+  {% seo %}
+  <meta name="google-site-verification" content="LwllE8LNzqSKfduvBO0DPUFHyeOhhYuk7QeKjmQHwKE" />
+</head>
+
+<body class="snow hack">
+  <div class="container">
+    {% include navbar.html %}
+
+    <div class="snowframe">
+      <div class="grid">
+        <div class="cell -3of12 content">
+          <center>
             {% if page.avatar %}
             <img src="{{page.avatar}}" alt="My Avatar" class="avatar">
             {% endif %}
             <br />
-            Reach me at <a href="mailto:xy.tao@outlook.com">xy.tao@outlook.com</a>,
+            Reach me at <a href="bigbro_zwg@zju.edu.cn">bigbro_zwg@zju.edu.cn</a>,
             <br />
             also available on
             <br />
-            <a href="https://github.com/tabokie">GitHub</a>, <a href="https://www.douban.com/people/91872582/">Douban</a>.
-            </center>
-          </div>
-          <div class="cell -9of12 content">
-            {{content}}
-          </div>
+            <a href="https://github.com/ZaneWiegand">GitHub</a>.
+          </center>
+        </div>
+        <div class="cell -9of12 content">
+          {{content}}
         </div>
       </div>
-
-      {% include footer.html %}
     </div>
-    <script src="/assets/js/instantpage-3.0.0.js" defer type="module"> </script>
-  </body>
+
+    {% include footer.html %}
+  </div>
+  <script src="/assets/js/instantpage-3.0.0.js" defer type="module"> </script>
+</body>
+
 </html>
