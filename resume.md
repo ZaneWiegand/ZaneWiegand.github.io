@@ -6,4 +6,6 @@ override_title: true
 
 # Wenguan Zhang (`张文冠`)
 
-TBD
+- 没有什么经历写的出来
+
+- 只是挣扎着，在泥泞中扎根
