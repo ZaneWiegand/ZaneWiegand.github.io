@@ -1,0 +1,31 @@
+# Site settings
+title: Your site
+description: >
+    Your description
+author: Your name
+email: your@e.mail
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourname.github.io" # the base hostname & protocol for your site
+twitter_username: YourTwitter
+github_username:  YourGitHub
+
+disqus_shortname: YourDisqusShortname
+
+# Build settings
+include: [_pages]
+markdown: kramdown
+permalink: /:year/:month/:title
+sass:
+    style: compressed
+
+gems:
+  - jemoji
+  - jekyll-sitemap
+# - amp-jekyll # Acceletrated Mobile Pages
+
+# AMP Settings
+# ampdir: amp/
+# enable_amp: true
+
+# Google Analytics
+# google_analytics: UA-XXXXXXXX-X
