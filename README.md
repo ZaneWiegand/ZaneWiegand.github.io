@@ -1,6 +1,8 @@
-# ZaneWiegand's Page
+# Tabokie's Page
 
-Personal site. A remake of [tabokie's website](https://tabokie.github.io/) with jekyll.
+Personal site. A remake of [Xe's website](https://christine.website/) with jekyll.
+
+Run `bundle install` followed by `bundle exec jekyll serve` to serve locally.
 
 ## Memo
 
