@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/css/hack.css">
+    <link rel="stylesheet" href="/assets/css/checkbox-container.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>{{page.title}}</title>
+    <style>
+     .main {
+       padding: 20px 10px;
+     }
+
+     .hack h1 {
+       padding-top: 0;
+     }
+
+     footer.footer {
+       border-top: 1px solid #ccc;
+       margin-top: 80px;
+       margin-top: 5rem;
+       padding: 48px 0;
+       padding: 3rem 0;
+     }
+
+     img {
+       max-width: 100%;
+       padding: 1em;
+     }
+    </style>
+    {% seo %}
+  </head>
+  <body class="snow hack">
+    <div class="container">
+      {% include navbar.html %}
+
+      <div class="snowframe">
+      {% unless page.override_title %}
+      <h1>{{page.title}}</h1>
+      {% endunless %}
+      {% if page.category %}
+      {% assign date = page.date | split: ' ' %}
+      {% assign prefix = date[0] %}
+      <p class="hidden-text"># {{page.category}}, {{ prefix }}</p>
+      {% endif %}
+      {{content}}
+      {% if page.childs and page.childs.size > 0 %}
+        <hr></hr>
+        <ul>
+        Subtopics:
+        {% for child in page.childs %}
+          {% for p in site.subtopics %}
+            {% if p.id == child %}
+              <li><a href="{{p.url}}">{{p.title}}</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        </ul>
+      {% endif %}
+      </div>
+
+      {% include footer.html %}
+    </div>
+    <script src="/assets/js/instantpage-3.0.0.js" defer type="module"> </script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+<div markdown="0">
+<a href="#{{uid}}" id="{{uid}}">{{include.title}}</a>
+<div markdown="1" class="foldable">
+{% assign uid = uid | plus: 1 %}

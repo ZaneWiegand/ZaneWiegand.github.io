@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/css/hack.css">
+    <link rel="stylesheet" href="/assets/css/checkbox-container.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>{{page.title}}</title>
+    <style>
+     .main {
+       padding: 20px 10px;
+     }
+
+     .hack h1 {
+       padding-top: 0;
+     }
+
+     footer.footer {
+       border-top: 1px solid #ccc;
+       margin-top: 80px;
+       margin-top: 5rem;
+       padding: 48px 0;
+       padding: 3rem 0;
+     }
+
+     img {
+       max-width: 100%;
+       padding: 1em;
+     }
+    </style>
+    {% seo %}
+  </head>
+  <body class="snow hack">
+    <div class="container">
+      {% include navbar.html %}
+
+      <div class="snowframe">
+        <h1>{{page.title}}</h1>
+        {{content}}
+        <div>
+          <!-- <label class="checkbox-container checkbox-hightlight">
+            <input type="checkbox" id="sortSelected">
+            [<span>by</span> <span class="n-indicator">time</span>/<span class="indicator">category</span>]
+          </label> -->
+          <!-- ✔ -->
+          <label class="checkbox-container">-
+            <input type="checkbox" id="sortSelected">
+            <b>[<span class="indicator">x</span>]</b>
+          </label>
+          sort by category
+        </div>
+
+        <p>
+          <style>#hide-li:after { content: ""; padding-left:8px;}</style>
+          <ul id="showOnUnchecked">
+            {% assign dateSorted = site.posts | sort: 'date' | reverse %}
+            {% for entry in dateSorted %}
+              {% assign cur = entry.date | split: ' ' %}
+              {% assign prefix = cur[0] %}
+              {% assign cur = entry.date | split: '-' %}
+              {% if year != cur[0] %}
+              {% assign year = cur[0] %}
+              {% unless forloop.first %}
+              <br />
+              {% endunless %}
+              <li id="hide-li"><b>{{year}}</b></li>
+              {% endif %}
+              <li>{{prefix | slice: 5, 5}} - <a href="{{entry.url}}">{{entry.title}}</a></li>
+            {% endfor %}
+          </ul>
+          <ul id="showOnChecked" style="display: none;">
+            {% assign categoryGrouped = site.posts | group_by: 'category' %}
+            {% assign categorySorted = categoryGrouped | sort: 'name' %}
+            {% for category in categorySorted %}
+              {% unless forloop.first %}
+              <br />
+              {% endunless %}
+              <li id="hide-li"><b>{{category.name}}</b></li>
+              {% assign titleSorted = category.items | sort: 'date' | reverse %}
+              {% for entry in titleSorted %}
+                {% assign cur = entry.date | split: ' ' %}
+                {% assign prefix = cur[0] %}
+                <li>{{prefix}} - <a href="{{entry.url}}">{{entry.title}}</a></li>
+              {% endfor %}
+            {% endfor %}
+          </ul>
+        </p>
+        <br />
+      </div>
+
+      {% include footer.html %}
+      <script>
+        window.onload = function() {
+          $('#sortSelected').prop('checked', false);
+        }
+        $('#sortSelected').click(function() {
+          $("#showOnChecked").toggle(this.checked);
+          $("#showOnUnchecked").toggle(!this.checked);
+        });
+      </script>
+    </div>
+
+    <script src="/assets/js/instantpage-3.0.0.js" defer type="module"> </script>
+  </body>
+</html>
+
+
+
