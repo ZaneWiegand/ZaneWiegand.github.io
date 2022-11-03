@@ -1,6 +1,0 @@
----
-layout: catalog
-title: Blogpost
----
-
-
