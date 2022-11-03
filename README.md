@@ -1,15 +1,39 @@
-# Biu-Jekyll-Theme
+# Tabokie's Page
 
-It is a Jekyll theme based on [butane-jekyll-theme](https://github.com/alexcarpenter/butane-jekyll-theme) by @alexcarpenter
+Personal site. A remake of [Xe's website](https://christine.website/) with jekyll.
 
-## Getting Started
-1. `git clone https://github.com/RedL0tus/Biu-Jekyll-Theme.git`
-2. `cd Biu-Jekyll-Theme`
-3. `rm -rf CHANGELOG.md README.md`
-4. `jekyll serve`
+Run `bundle install` followed by `bundle exec jekyll serve` to serve locally.
 
-## Sites using Butane Jekyll Theme
-- [v2bv.win](https://v2bv.win)
+## Memo
 
-## Screenshot:
-![Screenshot1](https://img.vim-cn.com/0b/dbf27e6ce44cf17afe049e5420a883bedf53c0.jpg)
+Front matter for normal blog post (named `/_posts/yyyy-mm-dd-name.md`):
+```
+---
+layout: blog
+title: Old Blog
+category: admin
+---
+```
+
+Tentative catogorization for blogposts:
+
+- tech: skills and facts only
+- review: single, concrete target, e.g. paper, film, device
+- fiction
+- non-fiction
+
+Front matter for topic post (named `/_(sub)topics/uuid.md`):
+```
+---
+layout: blog
+title: Master Topic
+childs:
+  - /subtopics/uuid
+---
+```
+
+Referencing blog post:
+
+```
+[A Related Post](/tag/yyyy/mm/dd/name.html)
+```
