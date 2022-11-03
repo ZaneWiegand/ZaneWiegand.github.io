@@ -32,5 +32,3 @@ Always hungry for food, and knowledge.
 -------
 
 Thanks Tabokie for your inspiring [site](https://tabokie.github.io/).
-
--------
