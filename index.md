@@ -21,6 +21,6 @@ I'm a lifelong learner. This site exists to accompany me through the journey ahe
 <br />
 
 -------
-
-
 Thanks Tabokie for your inspiring [site](https://tabokie.github.io/).
+
+-------
