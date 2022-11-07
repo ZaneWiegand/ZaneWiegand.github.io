@@ -8,16 +8,12 @@ I'm Zane Wiegand.
 
 I'm a photography enthusiasts. I'm not professional, but I use camera to record what I am intrested in.
 
-I am a life-long learner, and curious about everything surrounding me. I try to stay positive and not lose my mind. I push myself forward, do something challengeable, if necessary.
+I am a lifelong learner, curious about everything surrounding me, and always hungry for food and knowledge. 
 
-Always hungry for food, and knowledge.
+I don't have many friends, and spend a lot of time alone. I try to stay positive and not lose my mind. I push myself forward, and do something challengeable, if necessary.
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+This site shows a large part of my life, and will accompany me throughout my life, if it is possible. Some posts may be absurd, but I write them down seriously.
+
 <br />
 <br />
 <br />
