@@ -18,14 +18,6 @@ This site shows a large part of my life, and will accompany me throughout my lif
 <br />
 <br />
 <br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
 
 -------
 
