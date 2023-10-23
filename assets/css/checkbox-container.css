@@ -1,0 +1,71 @@
+/*
+Usage:
+<label class="checkbox-container">
+  <input type="checkbox"/>
+  <b>[<span class="n-indicator">+</span>]</b>
+  some title
+  <div style="margin-top:0px;margin-bottom:0px;">
+    some nested content
+  </div>
+</label>
+*/
+.indicator {
+  color: var(--camouflage-color);
+  display: inline;
+}
+
+input[type=checkbox]:checked ~ b .indicator {
+  color: var(--color);
+  text-decoration: none;
+}
+
+.n-indicator {
+  color: var(--color);
+  display: inline;
+}
+
+input[type=checkbox]:checked ~ b .n-indicator {
+  color: var(--camouflage-color);
+  text-decoration: none;
+}
+
+.checkbox-container > ul {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ ul {
+  display: inline;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  float: left;
+  margin-top: 5px;
+}
+
+.checkbox-container input ~ b {
+  color: var(--highlight-color);
+  transition: var(--hover-transition);
+  -webkit-transition: var(--hover-transition);
+  -moz-transition: var(--hover-transition);
+  -o-transition: var(--hover-transition);
+  border-bottom: 1px solid var(--highlight-color);
+}
+
+.checkbox-container input ~ b:hover {
+  background-color: var(--highlight-color);
+}
+
+.foldable {
+  display: none;
+  border-left: 1px solid var(--color);
+  padding-left: 13px;
+}
+
+a:target + div.foldable {
+  display: block;
+}

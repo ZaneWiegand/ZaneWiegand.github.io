@@ -1,0 +1,9 @@
+collections:
+  topics:
+    output: true
+  subtopics:
+    output: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
