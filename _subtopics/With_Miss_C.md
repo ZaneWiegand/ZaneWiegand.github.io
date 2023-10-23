@@ -14,4 +14,3 @@ title: With Miss.C
 
 # 2023.9.30
 - 2
-- 3
